@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">"Cisco's Security Features"</string>
+    <string name="passwords_and_privileges_commands">Passwords and Privileges Commands</string>
+    <string name="contact_cisco">Contact Cisco</string>
+    <string name="ip_security_options_commands">IP Security Options Commands</string>
+    <string name="secure_shell_commands">Secure Shell Commands</string>
+    <string name="go_now">Go Now!</string>
+    <string name="article_title">Passwords and Privileges Commands</string>
+    <string name="article_subtitle">"Let's learn!"</string>
+    <string name="article_text">This chapter describes the commands used to establish password protection and configure privilege levels. Password protection lets you restrict access to a network or a network device. Privilege levels let you define what commands users can issue after they have logged in to a network device.
+        \n\n
+For information on how to establish password protection or configure privilege levels, refer to the "Configuring Passwords and Privileges" chapter in the Cisco IOS Security Configuration Guide. For configuration examples using the commands in this chapter, refer to the "Passwords and Privileges Configuration Examples" section located at the end of the "Configuring Passwords and Privileges" chapter in the Cisco IOS Security Configuration Guide.
+\n\n
+        <i>1. enable password</i>
+        \n\n
+To set a local password to control access to various privilege levels, use the enable password command in global configuration mode. To remove the password requirement, use the no form of this command.
+\n\n
+enable password [level level] {password | [encryption-type] encrypted-password}
+\n\n
+no enable password [level level]
+    \n\n
+    <i>2. enable secret</i>
+    \n\n
+    To specify an additional layer of security over the enable password command, use the enable secret command in global configuration mode. To turn off the enable secret function, use the no form of this command.
+    \n\n
+    enable secret [level level] {password | [encryption-type] encrypted-password}
+    \n\n
+    no enable secret [level level]
+    \n\n
+       <i>3. password</i>
+To specify a password on a line, use the password command in line configuration mode. To remove the password, use the no form of this command.
+
+password password
+
+no password
+    </string>
+</resources>
